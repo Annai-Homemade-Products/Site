@@ -1,0 +1,8 @@
+package com.productcatalog.repository;
+
+import com.productcatalog.entity.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepository extends JpaRepository<Product, Long> {
+    // Custom query methods if needed
+}

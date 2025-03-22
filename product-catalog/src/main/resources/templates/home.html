@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home - Product Catalog</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #333;
+        }
+        .navbar a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .brand-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .sample-container {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            padding-left: 10%;
+            padding-bottom: 5%;
+            
+        }
+        .sample-product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 50%;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f9f9f9;
+        }
+        .product-details {
+            width: 55%;
+            text-align: left;
+            padding: 10px;
+        }
+        .product-image img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 8px;
+        }
+        
+        .catalog-button a {
+            display: inline-block;
+            padding: 8px;
+            text-decoration: none;
+            margin-right: 5px;
+            color: white;
+            border-radius: 5px;
+        }
+        .Learn-more { background-color: #E4405F; }
+        
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+         /* height: 20%;*/
+            width: 100%;
+         /* position: absolute;*/
+            bottom: 0;
+            left: 0;
+        }
+        .footer div {
+            width: 45%;
+            text-align: left;
+        }
+        .social-buttons a {
+            display: inline-block;
+            padding: 8px;
+            text-decoration: none;
+            margin-right: 5px;
+            color: white;
+            border-radius: 5px;
+        }
+        .instagram { background-color: #E4405F; }
+        .mail { background-color: #007BFF; }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/catalog}">Products</a>
+</div>
+
+<!-- Brand Name -->
+<div class="brand-name">HOMEMADE Home Products</div>
+
+<!-- Sample Product -->
+<div class="sample-container">
+    <div class="sample-product">
+    
+    	<div class="product-image">
+            <img src="/images/rose-petal.jpg" alt="Powder Varieties">
+        </div>
+        <div class="product-details">
+            <p>High-quality dried powders.</p>
+            <div class="catalog-button">
+            	<a onclick="window.location.href='/catalog'" class="Learn-more">Learn More</a>
+        	</div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div>
+        <h3>About Us</h3>
+        <p>We provide the best quality herbal powders.</p>
+    </div>
+    <div>
+        <h3>Follow Us</h3>
+        <div class="social-buttons">
+            <a href="https://www.instagram.com/annaihomemadeproducts/" class="instagram">Instagram</a>
+            <a href="mailto:info@example.com" class="mail">Email</a>
+        </div>
+        <p>Contact: +91 98765 43210</p>
+    </div>
+</div>
+
+</body>
+</html>
