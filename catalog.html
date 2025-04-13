@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:8080/catalog -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Product Catalog</title>
+    <script src="./catalog_files/jquery-3.6.0.min.js.download"></script>
+    <style>
+        /* Ensure full height layout */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #333;
+        }
+        .navbar a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        /* Content area */
+        .content {
+            flex: 1;
+            padding: 20px;
+            padding-bottom: 60px; /* Space for footer */
+        }
+
+        /* Product Container */
+        .product-container {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            display: inline-block;
+            background-color: #f9f9f9;
+        }
+        .product-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .product-image img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 5px;
+        }
+        .product-description {
+            margin-bottom: 5px;
+        }
+        .product-price {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            /*position: fixed;*/
+            bottom: 0;
+            left: 0;
+        }
+        .footer div {
+            width: 45%;
+            text-align: left;
+        }
+        .social-buttons a {
+            display: inline-block;
+            padding: 8px;
+            text-decoration: none;
+            margin-right: 5px;
+            color: white;
+            border-radius: 5px;
+        }
+        .instagram { background-color: #E4405F; }
+        .mail { background-color: #007BFF; }
+    </style>
+<style type="text/css" id="mytempCss">._8mqQwQ { display: none; } ._1TWLMK.icF5zO { opacity: 0.01; }</style></head>
+<body data-new-gr-c-s-check-loaded="14.1228.0" data-gr-ext-installed="">
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="http://localhost:8080/">Home</a>
+    <a href="http://localhost:8080/catalog">Products</a>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+    <h2>Product Catalog</h2>
+    <div class="product-container">
+        <div class="product-name">Aavarampoo powder</div>
+        <div class="product-image">
+            <img src="./catalog_files/aavarampoo.jpg" alt="Product Image">
+        </div>
+        <div class="product-description">Natural herbal powder</div>
+        <div class="product-price">₹ 150.0</div>
+    </div>
+    <div class="product-container">
+        <div class="product-name">Rose petal powder</div>
+        <div class="product-image">
+            <img src="./catalog_files/rose-petal.jpg" alt="Product Image">
+        </div>
+        <div class="product-description">Made from dried rose petals</div>
+        <div class="product-price">₹ 180.0</div>
+    </div>
+    <div class="product-container">
+        <div class="product-name">Amla powder</div>
+        <div class="product-image">
+            <img src="./catalog_files/amla.jpg" alt="Product Image">
+        </div>
+        <div class="product-description">Rich in Vitamin C</div>
+        <div class="product-price">₹ 200.0</div>
+    </div>
+    <div class="product-container">
+        <div class="product-name">Tomato powder</div>
+        <div class="product-image">
+            <img src="./catalog_files/tomato.jpg" alt="Product Image">
+        </div>
+        <div class="product-description">Dehydrated tomato goodness</div>
+        <div class="product-price">₹ 120.0</div>
+    </div>
+    <div class="product-container">
+        <div class="product-name">Beetroot powder</div>
+        <div class="product-image">
+            <img src="./catalog_files/beetroot.jpg" alt="Product Image">
+        </div>
+        <div class="product-description">Natural color and nutrition</div>
+        <div class="product-price">₹ 160.0</div>
+    </div>
+    <div class="product-container">
+        <div class="product-name">Carrot powder</div>
+        <div class="product-image">
+            <img src="./catalog_files/carrot.jpg" alt="Product Image">
+        </div>
+        <div class="product-description">Rich in beta-carotene</div>
+        <div class="product-price">₹ 140.0</div>
+    </div>
+    <div class="product-container">
+        <div class="product-name">Potato powder</div>
+        <div class="product-image">
+            <img src="./catalog_files/potato.jpg" alt="Product Image">
+        </div>
+        <div class="product-description">Smooth texture for recipes</div>
+        <div class="product-price">₹ 110.0</div>
+    </div>
+    <div class="product-container">
+        <div class="product-name">Henna powder</div>
+        <div class="product-image">
+            <img src="./catalog_files/henna.jpg" alt="Product Image">
+        </div>
+        <div class="product-description">Natural hair dye</div>
+        <div class="product-price">₹ 250.0</div>
+    </div>
+    <div class="product-container">
+        <div class="product-name">Curry leaves rice powder</div>
+        <div class="product-image">
+            <img src="./catalog_files/curry-leaves.jpg" alt="Product Image">
+        </div>
+        <div class="product-description">Aromatic and flavorful</div>
+        <div class="product-price">₹ 130.0</div>
+    </div>
+    <div class="product-container">
+        <div class="product-name">Charcoal powder</div>
+        <div class="product-image">
+            <img src="./catalog_files/charcoal.jpg" alt="Product Image">
+        </div>
+        <div class="product-description">Purifying and detoxifying</div>
+        <div class="product-price">₹ 190.0</div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div>
+        <h3>About Us</h3>
+        <p>We provide the best quality herbal powders.</p>
+    </div>
+    <div>
+        <h3>Follow Us</h3>
+        <div class="social-buttons">
+            <a href="https://instagram.com/" class="instagram">Instagram</a>
+            <a href="mailto:info@example.com" class="mail">Email</a>
+        </div>
+        <p>Contact: +91 98765 43210</p>
+    </div>
+</div>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

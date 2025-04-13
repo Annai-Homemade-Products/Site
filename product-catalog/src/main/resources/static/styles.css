@@ -1,0 +1,221 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Futura;
+    background-color: #F8F5F2;
+    color: #333;
+    scroll-behavior: smooth;
+    
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    /*padding: 20px 60px;
+    
+    background-color: rgba(248, 245, 242, 0.95);
+    backdrop-filter: blur(10px);*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+
+    
+    border-bottom: 2px solid rgb(172, 172, 172);
+    backdrop-filter: blur(5px); /* Optional: adds blur for better translucency effect */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type='text'] {
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar {
+    width: 200px; /* Adjust width as needed */
+    padding: 8px;
+    border: none;
+    background: transparent;
+    color: white; /* Adjust color as needed */
+    outline: none;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .search-bar:focus {
+    border-bottom: 2px solid white; /* White border appears on focus */
+  }
+  
+.navbar-right a {
+    text-decoration: none;
+    color: rgba(163, 163, 163, 0.7);
+    font-size: 18px;
+    justify-content: space-around;
+    margin-right: 50px;
+    font-family: 'Avenir LT W01_35 Light1475496', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background: url('background.jpg') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+    font-size: 72px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.hero p {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.hero button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+.hero button:hover {
+    background-color: #fff;
+    color: #333;
+    
+}
+
+/* Parallax Effect */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Product Section */
+.product-section {
+    background-color: #FFF;
+    padding: 100px 60px;
+    text-align: center;
+}
+
+.product-section h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-family: 'Didot W01 Italic', serif;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: scale-down;
+    border-radius: 12px;
+}
+
+.product-item p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.product-button {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #fff;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+.product-button:hover {
+    background-color: #fff;
+    color: #000000;
+    
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: #F8F5F2;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer div h3 {
+    font-size: 24px;
+    font-family: 'Avenir LT W01_35 Light1475496', sans-serif;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer .social-icons img {
+    width: 32px;
+    margin-right: 10px;
+    
+}
+
+.footer .social-icons a:hover img {
+    opacity: 0.7;
+}
+
+
+
+/* Adjust spacing */
+.container {
+    margin-top: 120px;
+}
