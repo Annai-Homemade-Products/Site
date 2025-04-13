@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "products")
 public class Product {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -12,9 +13,11 @@ public class Product {
     private String name;
     private String description;
     private double price;
-    
+
     @Column(name = "image_url")
     private String imageUrl;
+
+    private String category; // New field
 
     // Getters and Setters
     public Long getId() { return id; }
@@ -31,4 +34,7 @@ public class Product {
 
     public String getImageUrl() { return imageUrl; }
     public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
+
+    public String getCategory() { return category; }
+    public void setCategory(String category) { this.category = category; }
 }
