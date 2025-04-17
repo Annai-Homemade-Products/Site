@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Aavarampoo powder",
+    "description": "Natural herbal powder",
+    "price": 150.00,
+    "imageUrl": "images/aavarampoo.jpg",
+    "category": "Powders"
+  },
+  {
+    "name": "Rose petal powder",
+    "description": "Made from dried rose petals",
+    "price": 180.00,
+    "imageUrl": "images/rose-petal.jpg",
+    "category": "Powders"
+  },
+  {
+    "name": "Amla powder",
+    "description": "Rich in Vitamin C",
+    "price": 200.00,
+    "imageUrl": "images/amla.jpg",
+    "category": "Powders"
+  },
+  {
+    "name": "Tomato powder",
+    "description": "Dehydrated tomato goodness",
+    "price": 120.00,
+    "imageUrl": "images/tomato.jpg",
+    "category": "Powders"
+  },
+  {
+    "name": "Beetroot powder",
+    "description": "Natural color and nutrition",
+    "price": 160.00,
+    "imageUrl": "images/beetroot.jpg",
+    "category": "Powders"
+  },
+  {
+    "name": "Carrot powder",
+    "description": "Rich in beta-carotene",
+    "price": 140.00,
+    "imageUrl": "images/carrot.jpg",
+    "category": "Powders"
+  },
+  {
+    "name": "Potato powder",
+    "description": "Smooth texture for recipes",
+    "price": 110.00,
+    "imageUrl": "images/potato.jpg",
+    "category": "Powders"
+  },
+  {
+    "name": "Henna powder",
+    "description": "Natural hair dye",
+    "price": 250.00,
+    "imageUrl": "images/henna.jpg",
+    "category": "Powders"
+  },
+  {
+    "name": "Curry leaves rice powder",
+    "description": "Aromatic and flavorful",
+    "price": 130.00,
+    "imageUrl": "images/curry-leaves.jpg",
+    "category": "Powders"
+  },
+  {
+    "name": "Charcoal powder",
+    "description": "Purifying and detoxifying",
+    "price": 190.00,
+    "imageUrl": "images/charcoal.jpg",
+    "category": "Powders"
+  },
+  {
+    "name": "Herbal hair oil",
+    "description": "14 natural ingredients",
+    "price": 150.00,
+    "imageUrl": "images/herbal.jpg",
+    "category": "Hair Oils"
+  },
+  {
+    "name": "Vembalam pattai oil",
+    "description": "Strengthens hair",
+    "price": 180.00,
+    "imageUrl": "images/vembalam-pattai.jpg",
+    "category": "Hair Oils"
+  },
+  {
+    "name": "Rosemary oil",
+    "description": "Promotes hair growth",
+    "price": 190.00,
+    "imageUrl": "images/rosemary.jpg",
+    "category": "Hair Oils"
+  },
+  {
+    "name": "Biryani masala",
+    "description": "Do not ask which style",
+    "price": 150.00,
+    "imageUrl": "images/biryani.jpg",
+    "category": "Masalas"
+  },
+  {
+    "name": "Sambar masala",
+    "description": "Boring",
+    "price": 180.00,
+    "imageUrl": "images/sambar.jpg",
+    "category": "Masalas"
+  },
+  {
+    "name": "Kulambu chilli masala",
+    "description": "Nope",
+    "price": 190.00,
+    "imageUrl": "images/kulambu-chilli.jpg",
+    "category": "Masalas"
+  },
+  {
+    "name": "Chicken masala",
+    "description": "Interesting",
+    "price": 180.00,
+    "imageUrl": "images/chicken.jpg",
+    "category": "Masalas"
+  },
+  {
+    "name": "Mutton masala",
+    "description": "Big nope",
+    "price": 1080.00,
+    "imageUrl": "images/mutton.jpg",
+    "category": "Masalas"
+  }
+]
