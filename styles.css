@@ -59,7 +59,7 @@ body, html {
     margin-right: 3.125rem;
     font-family: 'Avenir LT W01_35 Light1475496', sans-serif;
   }
-  
+
   .navbar-brand {
     display: flex;
     align-items: center;
@@ -73,6 +73,7 @@ body, html {
     width: auto;
     object-fit: contain;
   }
+  
   
   /* Hero Section */
   .hero {
