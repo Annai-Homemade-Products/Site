@@ -67,12 +67,18 @@ body, html {
     padding-right: 1rem;
   }
   
-  .navbar-logo,
-  .navbar-font {
+  .navbar-logo {
     height: 40px;
     width: auto;
     object-fit: contain;
   }
+
+    .navbar-font {
+      height: 32px; /* or try 28px, 24px, etc. */
+      object-fit: contain;
+      padding-left: 8px;
+      vertical-align: middle;
+    }
   
   
   /* Hero Section */
