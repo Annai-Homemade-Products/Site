@@ -27,14 +27,42 @@ async function loadProducts(filter = {}) {
 
   // Render
   container.innerHTML = '';
-  filtered.forEach(product => {
+  filtered.forEach((product, index) => {
     const item = document.createElement('div');
     item.className = 'product-item';
     item.innerHTML = `
-      <img src="${product.imageUrl}" alt="${product.name}" />
+      <img src="${product.imageUrl}" alt="${product.name}" data-index="${index}" />
       <p>${product.name}</p>
+
+      <!-- Popup -->
+      <div class="product-popup" id="popup-${index}">
+        <div class="product-popup-content">
+          <img src="${product.imageUrl}" alt="${product.name}" />
+          <h2>${product.name}</h2>
+          <p>${product.description}</p>
+          <p><strong>Price:</strong> ₹${product.price}</p>
+        </div>
+      </div>
     `;
     container.appendChild(item);
+  });
+
+  // Setup click-to-open popup
+  document.querySelectorAll('.product-item img').forEach(img => {
+    img.addEventListener('click', () => {
+      const index = img.getAttribute('data-index');
+      const popup = document.getElementById(`popup-${index}`);
+      popup.style.display = 'flex';
+    });
+  });
+
+  // Setup click-outside-to-close popup
+  document.querySelectorAll('.product-popup').forEach(popup => {
+    popup.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
   });
 }
 
