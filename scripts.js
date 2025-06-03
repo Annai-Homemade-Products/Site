@@ -40,7 +40,6 @@ async function loadProducts(filter = {}) {
           <img src="${product.imageUrl}" alt="${product.name}" />
           <h2>${product.name}</h2>
           <p>${product.description}</p>
-          <p><strong>Price:</strong> ₹${product.price}</p>
         </div>
       </div>
     `;
